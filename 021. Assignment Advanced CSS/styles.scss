@@ -1,0 +1,194 @@
+@import "mixins&variables";
+
+html{
+    height:100%;
+    width:100%;
+}
+body{
+    background-color: #c3cfe2;
+}
+
+/* ------------------------------1e opdracht-------------------------- */
+
+.testimonial-container{
+    height: 950px;
+    max-width: 700px;
+    background: linear-gradient(to bottom, #fff 68%, #686de0 50%);
+    margin-bottom: 30px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -8px 15px 40px -1px rgb(105, 104, 104);
+    P{
+        padding-top: 75px;
+        text-align: left;
+        color: rgb(102, 101, 101);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 600;
+        line-height: 2.2;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 0;
+        font-size: 1.2rem; 
+    }
+    .foto{
+        padding-top: 540px;
+        position: $position;
+        align-self: center;
+    }
+    .foto img{
+        max-height: 200px;
+        max-width: 200px;
+        border-radius: 50%;
+        border: 10px solid white;
+    }
+    & p:nth-child(3){
+        position: $position;
+        padding-top: 800px;
+        align-self: center;
+        inline-size: max-content;
+        color: white;
+        letter-spacing: 0.2rem;
+    }
+    & p:nth-child(4){
+        position: $position;
+        padding-top: 800px;
+        align-self: center;
+        color: rgb(187, 188, 235);
+        font-size: 1.4rem;
+        margin-top: 50px;
+    }  
+}
+
+/* ------------------------------2e opdracht-------------------------- */
+
+.image-container{
+    display: grid;
+    grid-gap: 15px;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    .Container{
+        position: relative;
+        img{
+            border-radius: 3%;
+            max-width: 100%;
+        }
+        .Button{
+            position: $position;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            color: #FFF;
+            border-radius: 3%;
+            transition: 0.5s ease-out;
+            a{
+                width: 100px;
+                padding: 5px;
+                display: flex;
+                justify-content: center;
+                font-weight: bolder;
+                border-radius: 5%;
+                background-color: white;
+                text-decoration: none;
+                margin: auto;
+                margin-top: 45%;
+                color: #1A4C80;
+            }
+        }
+        &:hover .Button {
+            background: #1A4C80;
+            opacity: 1;
+        }
+    }
+}
+
+/* ------------------------------3e opdracht-------------------------- */
+
+.socialmedia-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 15px;
+    .link{
+        padding-left: 25px;
+    }
+    a{
+        color: white;
+        &:visited{
+            color: white;
+        }    
+    }
+    .fa-laptop-code, .fa-facebook-f, .fa-linkedin-in, .fa-github, .fa-twitter{
+        color: white;
+        font-size: 20px;
+        padding-top: 13px;
+        padding-left: 15px;
+    }
+    .blog{
+        @include text();
+        background-color: #e17b77;
+        &:hover{
+            width: $widthhover;
+        }
+        &:hover .link{
+            @include paddingLeftTop();
+        }
+    }
+    .twitter{
+        @include text();
+        background-color: #00aced;
+        &:hover{
+            width: $widthhover;
+        }
+        &:hover .link{
+            @include paddingLeftTop();
+        }
+    }
+    .linkedin{
+        @include text();
+        background-color: #007bb6;
+        &:hover{
+            width: $widthhover;
+        }
+        &:hover .link{
+            @include paddingLeftTop();
+        }
+    }
+    .facebook{
+        @include text();
+        background-color: #3b5998;
+        &:hover{
+            width: $widthhover;
+        }
+        &:hover .link{
+            @include paddingLeftTop();
+        }
+    }
+    .github{
+        @include text();
+        background-color: #333;
+        &:hover{
+            width: $widthhover;
+        }
+        &:hover .link{
+            @include paddingLeftTop();
+        }
+    }
+}
+
+/* ------------------------------Media query-------------------------- */
+
+@media (max-width: 768px){
+
+.image-container{
+    grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 320px){
+
+    .image-container{
+        grid-template-columns: 1fr;
+    }
+}

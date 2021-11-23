@@ -1,0 +1,279 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #c3cfe2;
+}
+
+/* ------------------------------1e opdracht-------------------------- */
+.testimonial-container {
+  height: 950px;
+  max-width: 700px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(68%, #fff), color-stop(50%, #686de0));
+  background: linear-gradient(to bottom, #fff 68%, #686de0 50%);
+  margin-bottom: 30px;
+  border-radius: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: -8px 15px 40px -1px #696868;
+          box-shadow: -8px 15px 40px -1px #696868;
+}
+
+.testimonial-container P {
+  padding-top: 75px;
+  text-align: left;
+  color: #666565;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  line-height: 2.2;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 0;
+  font-size: 1.2rem;
+}
+
+.testimonial-container .foto {
+  padding-top: 540px;
+  position: absolute;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.testimonial-container .foto img {
+  max-height: 200px;
+  max-width: 200px;
+  border-radius: 50%;
+  border: 10px solid white;
+}
+
+.testimonial-container p:nth-child(3) {
+  position: absolute;
+  padding-top: 800px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  inline-size: -webkit-max-content;
+  inline-size: -moz-max-content;
+  inline-size: max-content;
+  color: white;
+  letter-spacing: 0.2rem;
+}
+
+.testimonial-container p:nth-child(4) {
+  position: absolute;
+  padding-top: 800px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #bbbceb;
+  font-size: 1.4rem;
+  margin-top: 50px;
+}
+
+/* ------------------------------2e opdracht-------------------------- */
+.image-container {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 15px;
+  width: 100%;
+  height: 100%;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.image-container .Container {
+  position: relative;
+}
+
+.image-container .Container img {
+  border-radius: 3%;
+  max-width: 100%;
+}
+
+.image-container .Container .Button {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  color: #FFF;
+  border-radius: 3%;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+}
+
+.image-container .Container .Button a {
+  width: 100px;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: bolder;
+  border-radius: 5%;
+  background-color: white;
+  text-decoration: none;
+  margin: auto;
+  margin-top: 45%;
+  color: #1A4C80;
+}
+
+.image-container .Container:hover .Button {
+  background: #1A4C80;
+  opacity: 1;
+}
+
+/* ------------------------------3e opdracht-------------------------- */
+.socialmedia-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-top: 15px;
+}
+
+.socialmedia-container .link {
+  padding-left: 25px;
+}
+
+.socialmedia-container a {
+  color: white;
+}
+
+.socialmedia-container a:visited {
+  color: white;
+}
+
+.socialmedia-container .fa-laptop-code, .socialmedia-container .fa-facebook-f, .socialmedia-container .fa-linkedin-in, .socialmedia-container .fa-github, .socialmedia-container .fa-twitter {
+  color: white;
+  font-size: 20px;
+  padding-top: 13px;
+  padding-left: 15px;
+}
+
+.socialmedia-container .blog {
+  height: 50px;
+  width: 50px;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transition: 700ms ease;
+  transition: 700ms ease;
+  background-color: #e17b77;
+}
+
+.socialmedia-container .blog:hover {
+  width: 250px;
+}
+
+.socialmedia-container .blog:hover .link {
+  padding-left: 25px;
+  padding-top: 15px;
+}
+
+.socialmedia-container .twitter {
+  height: 50px;
+  width: 50px;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transition: 700ms ease;
+  transition: 700ms ease;
+  background-color: #00aced;
+}
+
+.socialmedia-container .twitter:hover {
+  width: 250px;
+}
+
+.socialmedia-container .twitter:hover .link {
+  padding-left: 25px;
+  padding-top: 15px;
+}
+
+.socialmedia-container .linkedin {
+  height: 50px;
+  width: 50px;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transition: 700ms ease;
+  transition: 700ms ease;
+  background-color: #007bb6;
+}
+
+.socialmedia-container .linkedin:hover {
+  width: 250px;
+}
+
+.socialmedia-container .linkedin:hover .link {
+  padding-left: 25px;
+  padding-top: 15px;
+}
+
+.socialmedia-container .facebook {
+  height: 50px;
+  width: 50px;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transition: 700ms ease;
+  transition: 700ms ease;
+  background-color: #3b5998;
+}
+
+.socialmedia-container .facebook:hover {
+  width: 250px;
+}
+
+.socialmedia-container .facebook:hover .link {
+  padding-left: 25px;
+  padding-top: 15px;
+}
+
+.socialmedia-container .github {
+  height: 50px;
+  width: 50px;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transition: 700ms ease;
+  transition: 700ms ease;
+  background-color: #333;
+}
+
+.socialmedia-container .github:hover {
+  width: 250px;
+}
+
+.socialmedia-container .github:hover .link {
+  padding-left: 25px;
+  padding-top: 15px;
+}
+
+/* ------------------------------Media query-------------------------- */
+@media (max-width: 768px) {
+  .image-container {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 320px) {
+  .image-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
